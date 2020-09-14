@@ -12,7 +12,7 @@ from storybuilder.assets import basic
 from storybuilder.assets import common_rubi
 from config import ASSET
 # import scenes
-# from scenes import xxx
+from scenes import Stage
 
 
 ################################################################
@@ -30,31 +30,31 @@ from config import ASSET
 ################################################################
 
 # Constant
-TITLE = "作品タイトル"
-MAJOR, MINOR, MICRO = 0, 0, 1
-COPY = "コピィ"
-ONELINE = "一行説明"
-OUTLINE = "あらすじ"
-THEME = "テーマ"
+TITLE = "わたしとワタシと私と"
+MAJOR, MINOR, MICRO = 1, 0, 0
+COPY = "誰かとの付き合い方の悩みとは、結局自分自身との付き合い方なのかも知れない"
+ONELINE = "約5万字の青春文学。小さなワタシたちと暮らす大学生の彼女の日常は、ある青年との出会いで崩れていく"
+OUTLINE = "約5万字の青春文学。大学生の今日子は他人には見えないＩＦ、イマジナリーフレンドと一緒に暮らしていた。ある日出会った彼女と約束をしたという青年には何故か彼女たちが見え、その日から彼女の日常が歪んでいく"
+THEME = "他人との付き合い方"
 GENRE = "ジャンル"
-TARGET = "ターゲット（年代）"
-SIZE = "規定サイズ"
-CONTEST_INFO = "コンテスト情報"
-CAUTION = "注意事項"
-NOTE = "備考"
+TARGET = "20-40years"
+SIZE = "70-150枚（210K-450K）"
+CONTEST_INFO = "文學界新人賞"
+CAUTION = ""
+NOTE = "エブリスタで氷室冴子青春文学賞に応募した作品のリメイク"
 SITES = ["エブリスタ", "小説家になろう", "ノベルアッププラス", "カクヨム"]
-TAGS = ["ドラマ",]
-RELEASED = (1, 1, 2020)
+TAGS = ["ドラマ", "文学"]
+RELEASED = (9, 30, 2020)
 
 
 # Episodes
-def ep_xxx(w: World):
-    return w.episode('episode_title',
-            outline="description")
-
-
 def ch_main(w: World):
     return w.chapter('main',
+            Stage.ch1(w),
+            Stage.ch2(w),
+            Stage.ch3(w),
+            Stage.ch4(w),
+            Stage.ch5(w),
             )
 
 # Notes
