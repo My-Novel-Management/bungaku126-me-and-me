@@ -12,7 +12,30 @@ from storybuilder.assets import basic
 from storybuilder.assets import common_rubi
 from config import ASSET
 # import scenes
-from scenes import Stage
+from scenes import AccelLink
+from scenes import Apart
+from scenes import AroundStation
+from scenes import BycycleParking
+from scenes import Classroom
+from scenes import Clinic
+from scenes import Famires
+from scenes import Hotel
+from scenes import InTrain
+from scenes import KyokoRoom
+from scenes import LectureHall
+from scenes import Library
+from scenes import MaruyamaPark
+from scenes import MatsuApart
+from scenes import OnBycycle
+from scenes import RamenShop
+from scenes import ShotaHome
+from scenes import ShotaHomeDrawing
+from scenes import ShotaRoom
+from scenes import SoupCurry
+from scenes import Station
+from scenes import Street
+from scenes import UnivCampus
+from scenes import University
 
 
 ################################################################
@@ -58,6 +81,12 @@ def ch_me_and_mes(w: World):
             w.plot_note("$shotaが現れた"),
             w.plot_note("サークルに$matsuが入った"),
             w.plot_note("$kyokoにはIFがいる"),
+            KyokoRoom.every_morning(w),
+            Street.goto_univ(w),
+            LectureHall.lecture_IF(w),
+            Classroom.mushroom(w),
+            University.friend_and_circle(w),
+            Apart.shotaro_again(w),
             )
 
 
@@ -68,15 +97,32 @@ def ch_me_and_life(w: World):
             w.plot_note("サークルでゴミ拾い"),
             w.plot_note("$matsuと$saitoと話す"),
             w.plot_note("明日子が現れた"),
+            Classroom.saito_san(w),
+            University.saito_san2(w),
+            KyokoRoom.shotaro_care(w),
+            KyokoRoom.awake_and_remember_his_word(w),
+            RamenShop.ramen_and_girl(w),
+            MaruyamaPark.cleaning_volunteer(w),
+            MaruyamaPark.matsumoto_and_saito(w),
+            Street.asuko(w),
             )
 
 
 def ch_me_and_family(w: World):
     return w.chapter("私と家族と",
-            # TODO
             w.plot_note("出張で札幌にきた父と会った"),
             w.plot_note("$shotaとホテルに入った"),
             w.plot_note("$shotaが消えた"),
+            Street.greeting_asuko(w),
+            Library.thinking_about(w),
+            Station.waiting_dad(w),
+            AroundStation.goto_curryshop(w),
+            SoupCurry.eating_together(w),
+            UnivCampus.about_family(w),
+            KyokoRoom.nothing_kyokos(w),
+            Famires.shotaro_and_mother(w),
+            AroundStation.goto_hotel(w),
+            Hotel.shota_and_hotel(w),
             )
 
 
@@ -87,6 +133,15 @@ def ch_me_and_me(w: World):
             w.plot_note("$shotaの家にいく"),
             w.plot_note("定期検診"),
             w.plot_note("わたしはわたし"),
+            KyokoRoom.alone_days(w),
+            Famires.senpai_talk(w),
+            MatsuApart.his_girlfriend(w),
+            ShotaHome.miyauchi_home(w),
+            ShotaHomeDrawing.his_dad_talk(w),
+            ShotaRoom.shotaro_and_memory(w),
+            InTrain.think_his_family(w),
+            Clinic.medical_examination(w),
+            Street.me_and_me(w),
             )
 
 
@@ -144,7 +199,11 @@ def main(): # pragma: no cover
             stage_note(w),
             theme_note(w),
             motif_note(w),
-            ch_main(w),
+            #
+            ch_me_and_mes(w),
+            ch_me_and_life(w),
+            ch_me_and_family(w),
+            ch_me_and_me(w),
             )
 
 
