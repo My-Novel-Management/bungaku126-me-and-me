@@ -48,14 +48,47 @@ RELEASED = (9, 30, 2020)
 
 
 # Episodes
-def ch_main(w: World):
-    return w.chapter('main',
-            Stage.ch1(w),
-            Stage.ch2(w),
-            Stage.ch3(w),
-            Stage.ch4(w),
-            Stage.ch5(w),
+
+
+
+# Chapters
+def ch_me_and_mes(w: World):
+    return w.chapter('私とわたしたち',
+            w.plot_note("$kyokoはいつも三人分準備する"),
+            w.plot_note("$shotaが現れた"),
+            w.plot_note("サークルに$matsuが入った"),
+            w.plot_note("$kyokoにはIFがいる"),
             )
+
+
+def ch_me_and_life(w: World):
+    return w.chapter("私と彼と",
+            w.plot_note("$shotaとの約束"),
+            w.plot_note("$saitoとラーメン屋に入った"),
+            w.plot_note("サークルでゴミ拾い"),
+            w.plot_note("$matsuと$saitoと話す"),
+            w.plot_note("明日子が現れた"),
+            )
+
+
+def ch_me_and_family(w: World):
+    return w.chapter("私と家族と",
+            # TODO
+            w.plot_note("出張で札幌にきた父と会った"),
+            w.plot_note("$shotaとホテルに入った"),
+            w.plot_note("$shotaが消えた"),
+            )
+
+
+def ch_me_and_me(w: World):
+    return w.chapter("私と私",
+            w.plot_note("サークルの先輩が引退する"),
+            w.plot_note("$matsuのIFと出会い、彼が亡くなっていると知った"),
+            w.plot_note("$shotaの家にいく"),
+            w.plot_note("定期検診"),
+            w.plot_note("わたしはわたし"),
+            )
+
 
 # Notes
 def writer_note(w: World):
