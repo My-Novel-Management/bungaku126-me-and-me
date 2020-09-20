@@ -90,6 +90,7 @@ def ch_me_and_mes(w: World):
             LectureHall.lecture_IF(w),
             Classroom.mushroom(w),
             University.friend_and_circle(w),
+            AccelLink.campany_people(w),
             Apart.shotaro_again(w),
             )
 

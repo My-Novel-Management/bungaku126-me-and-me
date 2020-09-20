@@ -7,7 +7,7 @@ Story Config
 ASSET = {
         "PERSONS": (
             # (tag / name / full / age (birth) / job / call / info)
-            ("kyoko", "今日子", "岩根,今日子", 20,(1,1), "female", "大学生", "me:私"),
+            ("kyoko", "今日子", "岩根,今日子", 20,(1,1), "female", "大学生", "me:私:dad:雪雄さん"),
             ("jrkyoko", "キョウコ", "", 15,(1,1), "female", "中学生", "me:ワタシ"),
             ("sjkyoko", "きょう子", "", 10,(1,1), "female", "小学生", "me:わたし"),
             ("asuko", "明日子", "岩根,明日子", 20,(1,1), "female", "大学生", "me:私"),
@@ -57,6 +57,12 @@ ASSET = {
             ),
         "DAYS": (
             # (tag / name / month / day / year)
+            ("ShotaBirthday", "翔太郎の誕生日", 6, 4, 2000),
+            ("DepartDay", "離婚した日", 6,4, 2005),
+            ("ShotaDeadDay", "翔太郎が亡くなった日", 8,10, 2010),
+            ("MeetShota", "翔太郎に会った日", 6,4, 2020),
+            ("VisitMiyauchi", "宮内家訪問", 8,10, 2020),
+            ("VisitClinic", "診察日", 9,10, 2020),
             ),
         "TIMES": (
             # (tag / name / hour / minute)
