@@ -88,8 +88,9 @@ def ch_me_and_mes(w: World):
             KyokoRoom.every_morning(w),
             Street.goto_univ(w),
             LectureHall.lecture_IF(w),
-            Classroom.mushroom(w),
+            Classroom.mushroom(w).omit(),
             University.friend_and_circle(w),
+            AroundStation.goto_work(w),
             AccelLink.campany_people(w),
             Apart.shotaro_again(w),
             )

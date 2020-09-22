@@ -74,6 +74,8 @@ ASSET = {
         "WORDS": (
             # (tag / name / cate / info)
             ("kanpo", "環境保全同好会"),
+            ("line", "ＬＩＮＥ"),
+            ("pc", "ＰＣ"),
             ),
         "RUBIS": (
             # (origin / rubi / exclusions / always)
