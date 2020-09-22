@@ -25,6 +25,7 @@ ASSET = {
             ("miura", "三浦", "", 45,(1,1), "male", "心療内科医", "me:私"),
             ("suzu", "鈴森", "鈴森,実里", 33,(1,1), "female", "会社員"),
             ("arase", "荒瀬", "荒瀬,省二", 40,(1,1), "male", "会社員"),
+            ("akio", "明央", "", 20,(1,1), "male", "大学生"),
             ),
         "STAGES": (
             # (tag / name / parent / (geometry) / info)
@@ -72,6 +73,7 @@ ASSET = {
             ),
         "WORDS": (
             # (tag / name / cate / info)
+            ("kanpo", "環境保全同好会"),
             ),
         "RUBIS": (
             # (origin / rubi / exclusions / always)
