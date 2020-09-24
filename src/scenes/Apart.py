@@ -59,7 +59,7 @@ def shotaro_again(w: World):
     kyo = w.get("kyoko")
     jk, sk = w.get("jrkyoko"), w.get("sjkyoko")
     sho = w.get("shota")
-    return w.scene("$shota再び",
+    return w.scene("$shota現れる",
             w.cmd.change_stage("Apart"),
             kyo.do("路地を曲がり、アパートが見えてくると少し速度を緩める"),
             kyo.do("その私の視界に、軽く手を挙げてみせるあの男の笑顔が、割り込んだ"),
