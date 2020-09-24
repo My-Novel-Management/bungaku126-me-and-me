@@ -93,7 +93,8 @@ def ch_me_and_mes(w: World):
             AroundStation.goto_work(w),
             AccelLink.campany_people(w),
             Street.meet_mushroom(w),
-            Apart.shotaro_again(w),
+            Apart.his_introduction(w),
+            Apart.shotaro_again(w).omit(),
             )
 
 
