@@ -94,7 +94,6 @@ def ch_me_and_mes(w: World):
             AccelLink.campany_people(w),
             Street.meet_mushroom(w),
             Apart.his_introduction(w),
-            Apart.shotaro_again(w).omit(),
             )
 
 
@@ -107,9 +106,11 @@ def ch_me_and_life(w: World):
             w.plot_note("明日子が現れた"),
             Classroom.saito_san(w),
             University.saito_san2(w),
-            #KyokoRoom.shotaro_care(w),
-            #KyokoRoom.awake_and_remember_his_word(w),
             RamenShop.ramen_and_girl(w),
+            OnBycycle.about_saito(w),
+            Apart.shotaro_again(w),
+            KyokoRoom.shotaro_care(w),
+            KyokoRoom.awake_and_remember_his_word(w),
             MaruyamaPark.cleaning_volunteer(w),
             MaruyamaPark.matsumoto_and_saito(w),
             Street.asuko(w),
