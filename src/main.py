@@ -109,6 +109,7 @@ def ch_me_and_life(w: World):
             RamenShop.ramen_and_girl(w),
             OnBycycle.about_saito(w),
             Apart.shotaro_again(w),
+            KyokoRoom.awaking(w),
             KyokoRoom.shotaro_care(w),
             KyokoRoom.awake_and_remember_his_word(w),
             MaruyamaPark.cleaning_volunteer(w),
