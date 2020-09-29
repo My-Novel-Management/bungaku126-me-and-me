@@ -140,6 +140,9 @@ def greeting_asuko(w: World):
     yukio = w.get("yukio")
     return w.scene("$asukoの挨拶",
             w.cmd.change_stage("Street"),
+            kyo.be(),
+            asu.be(),
+            # TODO
             kyo.talk("明日子《あすこ》？"),
             kyo.do("私に手を差し伸べている赤い眼鏡の女性から、逃げ出そうという体勢のままで彼女を見ていた"),
             asu.talk("他の今日子たちと何も変わらないのに、何をそんなに怯えているの？"),
