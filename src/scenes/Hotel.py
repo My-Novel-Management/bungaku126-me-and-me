@@ -15,6 +15,9 @@ def shota_and_hotel(w: World):
     sho = w.get("shota")
     return w.scene('$shotaとホテル',
             w.cmd.change_stage("Hotel"),
+            w.cmd.change_time("night"),
+            kyo.be(),
+            sho.be(),
             kyo.talk("翔太郎？　ねえ帰ろう？　せめて私のアパートで"),
             kyo.do("何なのだろう。自分のアパートなら良いのだろうか"),
             kyo.do("初めて入った男女がそういうことをする、所謂《いわゆる》ラブホテルみたいな場所は、どこに目を向けていいのやら分からず、私はただ彼に手を引かれるままにエレベータに乗って、三階で降りた"),

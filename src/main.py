@@ -131,6 +131,7 @@ def ch_me_and_family(w: World):
             SoupCurry.eating_together(w),
             UnivCampus.about_family(w),
             KyokoRoom.nothing_kyokos(w),
+            AroundStation.shotaro(w),
             Famires.shotaro_and_mother(w),
             AroundStation.goto_hotel(w),
             Hotel.shota_and_hotel(w),
