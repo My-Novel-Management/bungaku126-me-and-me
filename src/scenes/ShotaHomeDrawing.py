@@ -15,7 +15,6 @@ def his_dad_talk(w: World):
     yoshi = w.get("yoshi")
     return w.scene('$shotaの父の話',
             w.cmd.change_stage("ShotaHomeDrawing"),
-            w.symbol("　　　　◆"),
             kyo.be(),
             yoshi.be(),
             kyo.do("通されたのは応接間だった"),
